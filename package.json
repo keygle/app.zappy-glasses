@@ -1,0 +1,27 @@
+{
+  "name": "Zappy's Glasses",
+  "main": "app.html",
+  "description": "Simply drag and drop a file to play it on XBMC.",
+  "version": "0.1",
+  "nodejs": true,
+  "node-main": "js/app-node.js",
+  "single-instance": true,
+  "window": {
+    "title": "Zappy's Glasses",
+    "toolbar": true,
+    "width": 500,
+    "height": 310,
+    "max_width": 500,
+    "max_height": 310,
+    "icon": "images/Zappys-glass.png",
+    "position": "center"
+  },
+  "contributors": [
+    {
+      "name": "Ajay",
+      "email": "ajdeveloped@gmail.com",
+      "web": "http://code.google.com/p/apple-tv2-xbmc/"
+    }
+  ],
+  "bugs": "mailto:ajdeveloped@gmail.com"
+}
