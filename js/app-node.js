@@ -11,9 +11,11 @@ console.log('Starting new http connection... at ' + HTTP_SERVER_PORT)
 server.listen(HTTP_SERVER_PORT);
 
 function streamFile(fileId, resp) {
+	console.log('Received request for Id = ' + fileId);
 	var dao = require('zappy-db');
 	dao.getFilePath(fileId, function(successInd, filePath) {
-		if (successInd == 1) {
+		console.log('Filepath = ' + filePath);
+		if (successInd === 1) {
 			filed(filePath).pipe(resp);
 		} else {
 			resp.writeHead(400);

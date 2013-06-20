@@ -1,5 +1,5 @@
 {
-  "name": "Zappy's Glasses",
+  "name": "zappyglasses",
   "main": "app.html",
   "description": "Simply drag and drop a file to play it on XBMC.",
   "version": "0.1",
@@ -9,10 +9,8 @@
   "window": {
     "title": "Zappy's Glasses",
     "toolbar": true,
-    "width": 500,
-    "height": 310,
-    "max_width": 500,
-    "max_height": 310,
+    "width": 564,
+    "height": 405,
     "icon": "images/Zappys-glass.png",
     "position": "center"
   },
