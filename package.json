@@ -8,9 +8,13 @@
   "single-instance": true,
   "window": {
     "title": "Zappy's Glasses",
-    "toolbar": true,
+    "toolbar": false,
     "width": 564,
     "height": 405,
+    "max_width": 564,
+    "max_height": 405,
+    "min_width": 564,
+    "min_height": 405,
     "icon": "images/Zappys-glass.png",
     "position": "center"
   },
