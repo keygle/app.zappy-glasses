@@ -25,7 +25,11 @@ var setGlass = function (index) {
 	}
 	$("#holder").removeClass("glassImgStream").addClass("glassImg");
 	$("#holder").slideDown('slow',function(){
-		$("#glassTitle").html(glass.name).delay(1000).fadeIn(2000);
+		var gname = glass.name;
+		if (gname.length > 18){
+			gname = gname.substring(0, 10).concat('..').concat(gname.substring(gname.length - 8, gname.length));
+		}
+		$("#glassTitle").html(gname).delay(1000).fadeIn(2000);
 	});
 }
 
@@ -80,7 +84,7 @@ var handlePlayRequest = function(e) {
 							console.log(response);
 							setTimeout(function() {
 									$("#holder").removeClass("glassImgStream").addClass("glassImg");
-								}, 5000);
+								}, 10000);
 							$("#holder").removeClass("glassImgOn").addClass("glassImgStream");
 							_sendingStatus.fadeOut(1000,function(){
 								addStatusLine('Media playback started!', 1);
